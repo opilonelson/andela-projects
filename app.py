@@ -7,6 +7,12 @@ app = Flask(__name__)
 def hello():
     return "Hello, Flask!"
 
+@app.route("/greet/<name>")
+def greet(name):
+    return jsonify({
+        "message": f"Hello, {name}!"
+    })
+
 @app.route("/health")
 def health():
     return {"status": "ok"}
