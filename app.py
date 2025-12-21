@@ -9,7 +9,6 @@ def hello():
 
 @app.route("/greet/<name>")
 def greet(name):
-    return jsonify({
         "message": f"Hello, {name}!"
     })
 
