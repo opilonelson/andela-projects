@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def hello():
-    return "Hello, Flask! FROM MAJOR"
+    return "Hello, Flask! FROM QA"
 
 @app.route("/greet/<name>")
 def greet(name):
